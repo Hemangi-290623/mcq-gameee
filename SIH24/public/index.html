@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constitutional Rights Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Constitutional Rights Quiz</h1>
+    
+    <!-- Start Screen -->
+    <div id="start-screen">
+      <h2>Enter your name to start the quiz</h2>
+      <input type="text" id="username" placeholder="Enter your name">
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" style="display:none;">
+      <h2 id="question"></h2>
+      <div id="options-container"></div>
+
+      <!-- Explanation and GIF, centered together -->
+      <div id="explanation" style="display:none;"></div>
+      <div id="gif-container" style="display:none;"></div>
+
+      <button id="next-btn" style="display:none;">Next Question</button>
+    </div>
+
+    <!-- Leaderboard Screen -->
+    <div id="leaderboard-container" style="display:none;">
+      <div class="Leaderboard-header">Leaderboard</div>
+      <ul id="leaderboard"></ul>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+
+    <!-- Score Display -->
+    <div id="score-display" style="display:none;">
+      <h3>Current Score: <span id="score">0</span></h3>
+    </div>
+  </div>
+
+  <!-- Coin container for coin animation -->
+  <div id="coin-container"></div>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
